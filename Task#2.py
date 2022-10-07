@@ -5,11 +5,11 @@
 # - [2, 3, 5, 6] => [12, 15]
 
 import random
-list = [random.randint(0,10) for i in range(random.randint(3,10))]
+list = [random.randint(0, 10) for i in range(random.randint(3, 10))]
 print(f"Specified list:\n{list}")
 i = 0
 array = []
-while(i<len(list)/2):
+while (i < len(list)/2):
     array.append(list[i]*list[len(list)-(i+1)])
-    i+=1
+    i += 1
 print(array)
